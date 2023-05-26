@@ -1,0 +1,141 @@
+:root {
+    --circle: #FFEEE7;
+    --purple: #7152B6;
+    --orange: #FF9346;
+    --rose: #FF9499;
+}
+
+body {
+    background: #FFEDE7;
+    color: #000;
+    display: flex;
+    min-width: 100vw;
+    max-height: 100vh;
+}
+
+main {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 4rem;
+}
+
+main h1 {
+    color: #C8323D;
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.social-medias a img {
+    width: 36px;
+    margin-left: 3rem;
+}
+
+.social-medias a:nth-child(1) img {
+    margin-left: 0;
+}
+main .alternative {
+    margin-top: 1.5rem;
+}
+
+main .alternative span {
+    font-size: 1.1rem;
+    position: relative;
+    font-weight: 400;
+    color: #C8323D;
+}
+
+main .alternative span::after,main .alternative span::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    background: #C8323D;
+    bottom: 50%;
+    right: 50px;
+}
+
+main .alternative span::before {
+    left: 50px;
+}
+
+
+main .social-medias {
+    display: flex;
+    align-content: center;
+}
+.images img {
+    background: transparent;
+    width: 80%;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    color: #C8323D;
+}
+
+main form input {
+    width: 300px;
+    height: 50px;
+    margin-top: 0.5rem;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #5C5E6D;
+    background: #f7e7e4;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #333645;
+   
+}
+
+main form input[type="submit"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 1.5rem;
+    border: none;
+    background: #7152B6;
+    border-radius: 36px;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: 0.3s all ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background: #513b81;
+}
+
+section.images {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+section.images .circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--rose);
+    top: 0;
+    left: 0;
+    clip-path: circle(38% at 85% 80%);
+    z-index: -1;
+}
